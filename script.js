@@ -62,8 +62,14 @@ const followUpConfirmLines = [
 ];
 
 const followUpCancelLines = [
-  { text: "Escribe aquí la primera línea para Cancelar", duration: 4000 },
-  { text: "Escribe aquí la segunda línea para Cancelar", duration: 4000 },
+  { text: "Heh ;3 primero que nada, tú tranquila, sabes que comprendo perfectamente", duration: 4000 },
+  { text: "Y además respeto tu decisión ;3", duration: 4000 },
+  { text: "De hecho, es por esa misma razón que me cohibí de seguir haciéndote tantas preguntas, no quería que te sintieras incómoda o algo así ", duration: 4000 },
+  { text: "Así que, preferí simplemente preguntarte, precisamente para evitar eso, y creo que fue lo correcto ;3", duration: 4000 },
+  { text: "Igual no te preocupes ;3 no cambia en absoluto lo que pienso de ti o lo que tú significas para mí, vale?🫂", duration: 4000 },
+  { text: "Bien ;3 ya que leíste todo esto... Pues no me queda mucho más que decir! Espero que pases/hayas pasado un muy feliz cumpleaños y...", duration: 4000 },
+  { text: "Que vengan muchos años más de vida, salud, exitos y muchas cosas bonitas para ti! Porque honestamente, tú te mereces todo lo bonito💙", duration: 4000 },
+  { text: "Tqm :3 Byeeee", duration: 4000 },
 ];
 
 function clearLyricsTimers() {
