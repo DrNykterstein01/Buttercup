@@ -1,0 +1,230 @@
+@property --bg-stop {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 80%;
+}
+html { height: 100%; }
+body {
+  margin: 0;
+  background-attachment: fixed;
+  /* Reemplazamos el porcentaje fijo por nuestra variable */
+  background: linear-gradient(to bottom, black 50%, rgb(0, 0, 44) var(--bg-stop), blue 100%);
+  min-height: 100vh;
+  overflow: hidden;
+  /* Animamos directamente la variable */
+  animation: bg-smooth 3s ease-in-out infinite alternate;
+  cursor: url("corazon2.png") 10 10, auto;
+}
+
+@keyframes bg-smooth {
+  0%, 100% {
+    --bg-stop: 80%;
+  }
+  50% {
+    --bg-stop: 60%;
+  }
+}
+.container {
+  min-height: 100vh;
+  padding-bottom: 135px; /* reserva espacio para las olas sin mover su posición */
+  box-sizing: border-box;
+  background: #011523;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+    .content {
+      font-family: Arial;
+      text-align: center;
+      font-size: 2em;
+      color: rgba(255,255,255, .8);
+    }
+
+    .waves {
+  position: absolute;
+  bottom: -135px;
+  height: 527px;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+}
+    .wave {
+      position: absolute;
+      left: -180px;
+      bottom: 0;
+      /*width: 200px;*/
+      /*height: 200px;*/
+      /*width: 100%;*/
+      /*border-radius: 50%;*/
+      /*background:rgba(0,0,0, .3);*/
+      width: 2402px;
+      height: 427px;
+      background: url(https://static.platzi.com/media/files/waves_c8551f5d-ecf6-4a81-ae1d-f3a0ad55ba10.png) center bottom no-repeat;
+      animation: 5s wave ease-in-out infinite alternate;
+    }
+    .wave.a {
+      background-position: 0 -854px;
+    }
+    .wave.b {
+      background-position: 0 -427px;
+      animation-delay: .6s;
+    }
+    .wave.c {
+      background-position: 0 0;
+      animation-delay: 1.2s;
+    }
+    /*.container {
+      position: absolute;
+    }*/
+    @keyframes wave {
+      0% {
+        transform: translate(0 , 0);
+      }
+      50% {
+        transform: translate(-80px, 30px);
+      }
+      100% {
+        transform: translate(160px, -60px);
+      }
+    }
+.moon {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: clamp(140px, 20vw, 250px);
+  height: clamp(140px, 20vw, 250px);
+  background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(224, 243, 255, 1) 46%, rgba(237, 249, 252, 1) 77%, rgba(199, 238, 255, 1) 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 0.8);
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.stage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.lyric{
+  opacity: 0;
+  transition: opacity 800ms ease;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 90%;
+  color: #07e6f6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  transform: translateY(-10%);
+  z-index: 4;
+}
+.lyric.visible{opacity:1}
+
+.stars{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 392px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.star{
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transform: scale(0.8);
+  will-change: opacity, transform;
+}
+
+/* animación de parpadeo (duración y delay los controla JS) */
+@keyframes twinkle {
+  0%   { opacity: 0; transform: scale(0.6); }
+  20%  { opacity: 0.9; transform: scale(1.1); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
+/* asegurar apilamiento: olas y luna encima de las estrellas */
+.waves { z-index: 2; }
+.moon { z-index: 3; }
+
+@media (max-height: 420px) {
+  .container { padding-bottom: 200px; }
+  .lyric { font-size: 1rem; }
+}
+
+/*Canvas para el corazoncito ;3*/
+canvas {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .2);
+      }
+
+h1 {
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 90%;
+  color: #07e6f6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  z-index: 4;
+  text-shadow: 3px 5px 7px rgb(0, 157, 255)
+}
+
+.tg1 {
+  font-size: 1.2rem;
+}
+
+.normal {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+#boton3 {
+  text-align: center;
+  background: black;
+  position: absolute;
+  color: #07e6f6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  z-index: 5;
+  transform: translateY(1000%);
+}
+
+#boton2 {
+  text-align: center;
+  background: black;
+  color: #07e6f6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  z-index: 4;
+  transform: translateY(2500%);
+}
+
+button {
+  text-align: center;
+  background: black;
+  color: #07e6f6;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px 10px;
+  box-shadow: 3px 3px 5px rgb(0, 157, 255);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
