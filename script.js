@@ -47,8 +47,18 @@ let fadeTimeout = null;
 let currentLineIndex = 0;
 
 const followUpConfirmLines = [
-  { text: "Escribe aquí la primera línea para Aceptar", duration: 4000 },
-  { text: "Escribe aquí la segunda línea para Aceptar", duration: 4000 },
+  { text: "SI ACEPTASTE? 🥹 SIIIIII", duration: 4000 },
+  { text: "*Le da un abrazo del tamaño de Júpiter*🫂💙", duration: 4000 },
+  { text: "Heh, de verdad estoy feliz por tu respuesta... A decir verdad, me sorprendiste 🫂", duration: 4000 },
+  { text: "Siendo sincero, si quiero conocerte mucho mejor :3 compartir más contigo, ver más de quién eres...", duration: 4000 },
+  { text: "Incluso salir a hacer algo, idk, ir al cine o cualquier plan que se te ocurra ;3 me gustaría pasar un poco más de tiempo contigo las veces que podamos", duration: 4000 },
+  { text: "Claro, siempre y cuándo a ti te agrade la idea ;3", duration: 4000 },
+  { text: "Te confieso que tú me pareces una chica en verdad increíble e interesante ;3 (aunque en realidad ya desde hace tiempo te he venido demostrando que eso pienso de ti, pero igual te lo confieso ;3)", duration: 4000 },
+  { text: "Así que, ahora que se tu respuesta, supongo que ahora puedo seguir haciéndote más preguntas para conocer más de ti ;3💙", duration: 4000 },
+  { text: "Y obviamente, para que sea justo, también te permitiré lo mismo! Te contaré más sobre mi e incluso te contaré algunas cositas que no suelo decir mucho :3", duration: 4000 },
+  { text: "Bien ;3 ya que leíste todo esto... Pues no me queda mucho más que decir! Espero que pases/hayas pasado un muy feliz cumpleaños y...", duration: 4000 },
+  { text: "Que vengan muchos años más de vida, salud, exitos y muchas cosas bonitas para ti! Porque honestamente, tú te mereces todo lo bonito🫶🏻💙", duration: 4000 },
+  { text: "Te quiero muchísimo💙 Byeeeee :3", duration: 4000 }
 ];
 
 const followUpCancelLines = [
