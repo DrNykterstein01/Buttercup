@@ -1,5 +1,5 @@
 const lines = [
-  { text: "Hey! Hellooooo :3", duration: 3000 },
+  { text: "Hey! Hellooooo :3", duration: 6000 },
   { text: "", duration: 550 },
   { text: "Bueno, si ya estás aquí, supongo que estás lista, así que... Ven conmigo un rato, vamos a relajarnos un poco, si?", duration: 6000 },
   { text: "", duration: 550 },
