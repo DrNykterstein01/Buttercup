@@ -15,7 +15,6 @@ export default class gift1 {
     ocultar() {
         this.gift1.hidden = true;
         document.querySelector("body").style.overflow = "hidden";
-        //ahora añadimos un estilo para que, al salir de gift1, el scroll vuelva a la parte más alta de la página
         document.querySelector("body").scrollTop = 0;
         document.querySelector("body").scrollTo(0, 0);
     }

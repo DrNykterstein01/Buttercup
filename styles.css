@@ -35,6 +35,11 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+#menu,
+#gift1 {
+  position: relative;
+  overflow: hidden;
+}
     .content {
       font-family: Arial;
       text-align: center;
@@ -156,7 +161,8 @@ body {
   100% { opacity: 0; transform: scale(0.8); }
 }
 
-/* asegurar apilamiento: olas y luna encima de las estrellas */
+/*esto servirá para asegurar el apilamiento de los elementos: 
+el fondo oscuro, y luego las olas y luna encima de las estrellas */
 .waves { z-index: 2; }
 .moon { z-index: 3; }
 
@@ -227,4 +233,16 @@ button {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+
+.waterMark {
+  color: #f60707;
+  font-style: italic;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  z-index: 4;
+  text-shadow: 3px 3px 10px rgb(255, 44, 44);
+  text-align: right;
+  margin-right: 2rem;
+  font-size: 20px;
 }

@@ -5,7 +5,7 @@ const lines = [
   { text: "", duration: 550 },
   { text: "He preparado este ambiente bonito para ti, es que...", duration: 6000 },
   { text: "", duration: 550 },
-  { text: "Se que todos estos días has estado trabajando muy duro, tanto en cosas de la uni, como en tu trabajo e incluso en casa...", duration: 6000 },
+  { text: "Se que todos estos días has estado esforzándote mucho, tanto en cosas de la uni, como en tu trabajo e incluso en casa...", duration: 6000 },
   { text: "", duration: 550 },
   { text: "Lo has hecho en verdad muy bien, cada día das lo mejor de ti y lo haces excelente...", duration: 7500 },
   { text: "", duration: 100 },
@@ -48,17 +48,21 @@ let currentLineIndex = 0;
 
 const followUpConfirmLines = [
   { text: "SI ACEPTASTE? 🥹 SIIIIII", duration: 4000 },
-  { text: "*Le da un abrazo del tamaño de Júpiter*🫂💙", duration: 4000 },
-  { text: "Heh, de verdad estoy feliz por tu respuesta... A decir verdad, me sorprendiste 🫂", duration: 4000 },
-  { text: "Siendo sincero, si quiero conocerte mucho mejor :3 compartir más contigo, ver más de quién eres...", duration: 4000 },
-  { text: "Incluso salir a hacer algo, idk, ir al cine o cualquier plan que se te ocurra ;3 me gustaría pasar un poco más de tiempo contigo las veces que podamos", duration: 4000 },
-  { text: "Claro, siempre y cuándo a ti te agrade la idea ;3", duration: 4000 },
-  { text: "Te confieso que tú me pareces una chica en verdad increíble e interesante ;3 (aunque en realidad ya desde hace tiempo te he venido demostrando que eso pienso de ti, pero igual te lo confieso ;3)", duration: 4000 },
-  { text: "Así que, ahora que se tu respuesta, supongo que ahora puedo seguir haciéndote más preguntas para conocer más de ti ;3💙", duration: 4000 },
-  { text: "Y obviamente, para que sea justo, también te permitiré lo mismo! Te contaré más sobre mi e incluso te contaré algunas cositas que no suelo decir mucho :3", duration: 4000 },
-  { text: "Bien ;3 ya que leíste todo esto... Pues no me queda mucho más que decir! Espero que pases/hayas pasado un muy feliz cumpleaños y...", duration: 4000 },
-  { text: "Que vengan muchos años más de vida, salud, exitos y muchas cosas bonitas para ti! Porque honestamente, tú te mereces todo lo bonito🫶🏻💙", duration: 4000 },
-  { text: "Te quiero muchísimo💙 Byeeeee :3", duration: 4000 }
+  { text: "*Le da un abrazo del tamaño de Júpiter*🫂💙", duration: 5000 },
+  { text: "Heh, de verdad estoy feliz por tu respuesta... A decir verdad, me sorprendiste 🫂", duration: 6000 },
+  { text: "Siendo sincero, si quiero conocerte mucho mejor :3 compartir más contigo, ver más de quién eres...", duration: 6000 },
+  { text: "Incluso salir a hacer algo, idk, ir al cine o cualquier plan que se te ocurra ;3 me gustaría pasar un poco más de tiempo contigo las veces que podamos", duration: 6000 },
+  { text: "Claro, siempre y cuándo a ti te agrade la idea ;3", duration: 5000 },
+  { text: "Te confieso que tú me pareces una chica en verdad increíble e interesante ;3 (aunque en realidad ya desde hace tiempo te he venido demostrando que eso pienso de ti, pero igual te lo confieso ;3)", duration: 8000 },
+  { text: "Así que, ahora que se tu respuesta, supongo que ahora puedo seguir haciéndote más preguntas para conocer más de ti, no? ;3💙", duration: 7000 },
+  { text: "Y obviamente, para que sea justo, también te permitiré lo mismo! Te contaré más sobre mi e incluso te contaré algunas cositas que no suelo decir mucho :3", duration: 7000 },
+  { text: "Bien ;3 ya que leíste todo esto... Pues no me queda mucho más que decir! Espero que pases/hayas pasado un muy feliz cumpleaños y...", duration: 8000 },
+  { text: "Que vengan muchos años más de vida, salud, exitos y muchas cosas bonitas para ti! Porque honestamente, tú te mereces todo lo bonito🫶🏻💙", duration: 7000 },
+  { text: "Te quiero muchísimo💙 Byeeeee :3", duration: 180000 },
+  { text: "What? Are you still here...?", duration: 4000 },
+  { text: "If it's so... Then I guess you should know you're really something special for me", duration: 8000 },
+  { text: "Maybe you'll know more about that very soon <3", duration: 8000 },
+  { text: "See you next friday, *Queen* ;3<3", duration: 8000 },
 ];
 
 const followUpCancelLines = [
@@ -69,7 +73,11 @@ const followUpCancelLines = [
   { text: "Igual no te preocupes ;3 no cambia en absoluto lo que pienso de ti o lo que tú significas para mí, vale?🫂", duration: 4000 },
   { text: "Bien ;3 ya que leíste todo esto... Pues no me queda mucho más que decir! Espero que pases/hayas pasado un muy feliz cumpleaños y...", duration: 4000 },
   { text: "Que vengan muchos años más de vida, salud, exitos y muchas cosas bonitas para ti! Porque honestamente, tú te mereces todo lo bonito💙", duration: 4000 },
-  { text: "Tqm :3 Byeeee", duration: 4000 },
+  { text: "Tqm :3💙 Byeeee", duration: 180000 },
+  { text: "Yep, ya puedes quitar esto ;3 solo dale al botón :3", duration: 20000 },
+  { text: "Por qué no le quieres dar al botón? XD", duration: 8000 },
+  { text: "Bueno, si quieres, puedo esperar un poco más ;3", duration: 8000 },
+  { text: "", duration: 240000 }
 ];
 
 function clearLyricsTimers() {

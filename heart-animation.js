@@ -33,7 +33,7 @@ ctx.fillStyle = "rgba(0,0,0,1)";
 ctx.fillRect(0, 0, width, height);
 
 let heartPosition = function (rad) {
-  //return [Math.sin(rad), Math.cos(rad)];
+  //return [Math.sin(rad), Math.cos(rad)]; (Reciclado. Si lo próximo no funciona, simplemente utilizaré esto)
   return [Math.pow(Math.sin(rad), 3), -(15 * Math.cos(rad) - 5 * Math.cos(2 * rad) - 2 * Math.cos(3 * rad) - Math.cos(4 * rad))];
 };
 let scaleAndTranslate = function (pos, sx, sy, dx, dy) {
