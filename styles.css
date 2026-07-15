@@ -245,4 +245,5 @@ button {
   text-align: right;
   margin-right: 2rem;
   font-size: 20px;
+  position: relative;
 }
