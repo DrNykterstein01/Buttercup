@@ -16,8 +16,15 @@ export default class menu {
         };
         this.botonM3 = document.getElementById('botonM3');
         this.botonM3.onclick = () => {
+            alert("Honestamente, me gustaría que este regalo lo veas con más detalle en un momento que estés más relajada y sola ;3 así lo ves con mucha más calma :3");
+            let flag = confirm("Dime, ¿Lo estás en este momento? :3");
+            if (flag){
             this.ocultar();
             this.app.gift3.mostrar();
+            }
+            else {
+                alert("Vale :3 tranqui!! Esn ese caso, vuelve luego! Aquí te esperará tu tercer regalo💙");
+            }
         };
     }
     mostrar() {
