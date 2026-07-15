@@ -126,7 +126,7 @@ body {
   padding: 0 1rem;
   max-width: 90%;
   color: #07e6f6;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-weight: bold;
   transform: translateY(-10%);
   z-index: 4;
@@ -186,7 +186,7 @@ h1 {
   padding: 0 1rem;
   max-width: 90%;
   color: #07e6f6;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-weight: bold;
   z-index: 4;
   text-shadow: 3px 5px 7px rgb(0, 157, 255)
@@ -205,7 +205,7 @@ h1 {
   background: black;
   position: absolute;
   color: #07e6f6;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-weight: bold;
   z-index: 5;
   transform: translateY(1000%);
@@ -215,7 +215,7 @@ h1 {
   text-align: center;
   background: black;
   color: #07e6f6;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-weight: bold;
   z-index: 4;
   transform: translateY(2500%);
@@ -225,7 +225,7 @@ button {
   text-align: center;
   background: black;
   color: #07e6f6;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   font-weight: bold;
   border-radius: 15px;
   padding: 5px 10px;
